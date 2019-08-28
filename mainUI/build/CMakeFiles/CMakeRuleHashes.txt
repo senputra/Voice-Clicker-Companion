@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+b6c06989a0221b820e0be299f6e8c0f8 CMakeFiles/VoiceCLicker_autogen
+1925edc99586ffa495e3aff25313214d VoiceCLicker_autogen/EWIEGA46WW/qrc_trayassets.cpp

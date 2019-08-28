@@ -1,0 +1,2 @@
+/usr/bin/ar qc libControlPanel.a  CMakeFiles/ControlPanel.dir/ControlPanel.cpp.o
+/usr/bin/ranlib libControlPanel.a

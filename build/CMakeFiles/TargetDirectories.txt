@@ -1,0 +1,4 @@
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build/CMakeFiles/Voice_Clicker_Companion.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build/CMakeFiles/rebuild_cache.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build/CMakeFiles/edit_cache.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build/CMakeFiles/Buffer.dir

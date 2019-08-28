@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRemoteInput_API.a  CMakeFiles/RemoteInput_API.dir/RemoteInput_API.cpp.o
+/usr/bin/ranlib libRemoteInput_API.a

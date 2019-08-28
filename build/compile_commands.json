@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/Voice_Clicker_Companion.dir/main.cpp.o -c \"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/main.cpp\"",
+  "file": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/main.cpp"
+},
+{
+  "directory": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -o CMakeFiles/Buffer.dir/Buffer/Buffer.cpp.o -c \"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Buffer/Buffer.cpp\"",
+  "file": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Buffer/Buffer.cpp"
+}
+]

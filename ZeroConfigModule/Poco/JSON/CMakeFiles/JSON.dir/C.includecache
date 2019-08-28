@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/praxiumsg/Downloads/poco-1.9.2/JSON/src/pdjson.c
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+errno.h
+-
+pdjson.h
+/Users/praxiumsg/Downloads/poco-1.9.2/JSON/src/pdjson.h
+
+/Users/praxiumsg/Downloads/poco-1.9.2/JSON/src/pdjson.h
+stdio.h
+-
+stdbool.h
+-
+

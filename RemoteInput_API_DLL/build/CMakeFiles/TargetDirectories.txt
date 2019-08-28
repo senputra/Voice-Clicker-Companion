@@ -1,0 +1,5 @@
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/RemoteInput_API_DLL/build/CMakeFiles/rebuild_cache.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/RemoteInput_API_DLL/build/CMakeFiles/edit_cache.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/RemoteInput_API_DLL/build/CMakeFiles/package_source.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/RemoteInput_API_DLL/build/CMakeFiles/package.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/RemoteInput_API_DLL/build/CMakeFiles/RemoteInput_API.dir

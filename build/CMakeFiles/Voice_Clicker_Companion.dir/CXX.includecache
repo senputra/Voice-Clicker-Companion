@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Buffer/Buffer.h
+iostream
+-
+
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/main.cpp
+iostream
+-
+Buffer/Buffer.h
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Buffer/Buffer.h
+

@@ -1,0 +1,6 @@
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/mainUI/build/CMakeFiles/package.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/mainUI/build/CMakeFiles/rebuild_cache.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/mainUI/build/CMakeFiles/edit_cache.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/mainUI/build/CMakeFiles/package_source.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/mainUI/build/CMakeFiles/VoiceCLicker.dir
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/mainUI/build/CMakeFiles/VoiceCLicker_autogen.dir

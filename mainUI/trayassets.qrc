@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/Assets/icon/heart.png</file>
+        <file>Resources/Assets/icon/1200x630Artboard 10xxhdpi.png</file>
+        <file>icon1.ico</file>
+    </qresource>
+</RCC>

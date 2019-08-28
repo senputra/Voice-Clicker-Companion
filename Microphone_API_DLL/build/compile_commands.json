@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/build",
+  "command": "/usr/bin/clang++   -I/usr/local/include -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio/include\" -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio\"  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -std=gnu++1z -o CMakeFiles/Microphone_API.dir/Microphone_API.cpp.o -c \"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/Microphone_API.cpp\"",
+  "file": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/Microphone_API.cpp"
+},
+{
+  "directory": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/build",
+  "command": "/usr/bin/clang++   -I/usr/local/include -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio/include\" -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio\"  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -std=gnu++1z -o CMakeFiles/Microphone_API.dir/NetworkStream.cpp.o -c \"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/NetworkStream.cpp\"",
+  "file": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/NetworkStream.cpp"
+},
+{
+  "directory": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/build",
+  "command": "/usr/bin/clang++   -I/usr/local/include -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio/include\" -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio\"  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -std=gnu++1z -o CMakeFiles/Microphone_API.dir/rtaudio.cpp.o -c \"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio.cpp\"",
+  "file": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio.cpp"
+},
+{
+  "directory": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/build",
+  "command": "/usr/bin/clang++   -I/usr/local/include -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio/include\" -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio\"  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -std=gnu++1z -o CMakeFiles/Microphone_API.dir/PlaybackStream.cpp.o -c \"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/PlaybackStream.cpp\"",
+  "file": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/PlaybackStream.cpp"
+},
+{
+  "directory": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/build",
+  "command": "/usr/bin/clang++   -I/usr/local/include -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio/include\" -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/rtaudio\"  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -std=gnu++1z -o CMakeFiles/Microphone_API.dir/StreamBuffer.cpp.o -c \"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/StreamBuffer.cpp\"",
+  "file": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/Microphone_API_DLL/StreamBuffer.cpp"
+}
+]
