@@ -1,0 +1,11 @@
+set(PROJECT_NAME RemoteInput)
+
+set(REMOTEINPUT_HEADERS
+    RemoteInput.h)
+
+set(REMOTEINPUT_SOURCES
+    RemoteInput.cpp)
+
+add_library(${PROJECT_NAME} STATIC
+    ${REMOTEINPUT_SOURCES} 
+    ${REMOTEINPUT_HEADERS})

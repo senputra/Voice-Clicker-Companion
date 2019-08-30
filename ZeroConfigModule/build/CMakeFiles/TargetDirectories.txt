@@ -1,3 +1,0 @@
-/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ZeroConfigModule/build/CMakeFiles/rebuild_cache.dir
-/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ZeroConfigModule/build/CMakeFiles/edit_cache.dir
-/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ZeroConfigModule/build/CMakeFiles/ServiceDiscovery_API.dir

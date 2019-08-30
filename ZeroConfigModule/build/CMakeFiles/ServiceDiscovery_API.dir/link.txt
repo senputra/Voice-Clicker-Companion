@@ -1,2 +1,0 @@
-/usr/bin/ar qc libServiceDiscovery_API.a  CMakeFiles/ServiceDiscovery_API.dir/ServiceDiscovery_API.cpp.o
-/usr/bin/ranlib libServiceDiscovery_API.a

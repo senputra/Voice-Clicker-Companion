@@ -1,2 +1,0 @@
-/usr/bin/ar qc libMicrophone_API.a  CMakeFiles/Microphone_API.dir/Microphone_API.cpp.o CMakeFiles/Microphone_API.dir/NetworkStream.cpp.o CMakeFiles/Microphone_API.dir/rtaudio.cpp.o CMakeFiles/Microphone_API.dir/PlaybackStream.cpp.o CMakeFiles/Microphone_API.dir/StreamBuffer.cpp.o
-/usr/bin/ranlib libMicrophone_API.a

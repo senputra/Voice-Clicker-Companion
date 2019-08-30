@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ControlPanel/build",
-  "command": "/usr/bin/clang++   -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ControlPanel/../ZeroConfigModule/Poco/DNSSD/include\" -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ControlPanel/../ZeroConfigModule/Poco/DNSSD/Bonjour/include\" -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ControlPanel/../ZeroConfigModule/Poco/DNSSD/Avahi/include\" -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ControlPanel/../ZeroConfigModule/Poco/Net/include\" -I\"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ControlPanel/../ZeroConfigModule/Poco/Foundation/include\"  -g   -std=gnu++1z -o CMakeFiles/ControlPanel.dir/ControlPanel.cpp.o -c \"/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ControlPanel/ControlPanel.cpp\"",
-  "file": "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/ControlPanel/ControlPanel.cpp"
-}
-]

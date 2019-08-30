@@ -1,2 +1,0 @@
-/Users/praxiumsg/Downloads/poco-1.9.2/Foundation/obj/Darwin/x86_64/debug_static/inflate.o /Users/praxiumsg/Downloads/poco-1.9.2/Foundation/obj/Darwin/x86_64/release_static/inflate.o /Users/praxiumsg/Downloads/poco-1.9.2/Foundation/obj/Darwin/x86_64/debug_shared/inflate.o /Users/praxiumsg/Downloads/poco-1.9.2/Foundation/obj/Darwin/x86_64/release_shared/inflate.o: src/inflate.c src/zutil.h src/zlib.h src/zconf.h \
-  src/inftrees.h src/inflate.h src/inffast.h src/inffixed.h
