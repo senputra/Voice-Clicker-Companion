@@ -20,7 +20,7 @@
 
 #include "ui_TrayApp.h"
 
-#include "../ControlPanel/ControlPanel.h"
+#include "./ControlPanel.h"
 
 class TrayApp : public QDialog
 {
