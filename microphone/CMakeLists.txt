@@ -26,8 +26,5 @@ if(Boost_FOUND)
         pthread)
 endif()
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-
 # //	g++ -Wall -D__MACOSX_CORE__ -o audioprobe audioprobe.cpp RtAudio.cpp 
 # -framework CoreAudio -framework CoreFoundation -lpthread
