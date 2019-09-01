@@ -32,15 +32,9 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${CONTROLPANEL_INCLUDES})
 target_link_libraries(${PROJECT_NAME} Qt5::Core)
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
-# target_link_libraries(VoiceCLicker 
-#                 ${CMAKE_SOURCE_DIR}/build/libControlPanel.a
-#                 ${CMAKE_SOURCE_DIR}/build/libMicrophone.a
-#                 ${CMAKE_SOURCE_DIR}/build/libBuffer.a
-#                 ${CMAKE_SOURCE_DIR}/build/libMicrophone.a
-#                 ${CMAKE_SOURCE_DIR}/build/libRemoteInput.a
-#                 ${CMAKE_SOURCE_DIR}/build/libServiceDiscovery.a)
 target_link_directories(${PROJECT_NAME} PRIVATE
     ${MAKE_LIBRARY_OUTPUT_DIRECTORY})
+    
 target_link_libraries(${PROJECT_NAME} ControlPanel)
 
 
