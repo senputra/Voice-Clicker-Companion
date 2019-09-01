@@ -29,4 +29,10 @@ if(Boost_FOUND)
         ${Boost_LIBRARIES}
         ${POCO_LINK_LIBRAIES}
         )
+        target_link_libraries(${PROJECT_NAME} PUBLIC
+            Buffer
+            Microphone
+            RemoteInput
+            ServiceDiscovery)
 endif()
+set(CONTROLPANEL_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR} PARENT_SCOPE)
