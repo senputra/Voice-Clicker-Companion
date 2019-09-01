@@ -1,8 +1,5 @@
 #pragma once
 
-// #define WINDOWS
-#define MACOS
-
 #ifndef REMOTEINPUT_H
 #define REMOTEINPUT_H
 
@@ -12,7 +9,7 @@
 // #define REMOTEINPUT_API __declspec(dllimport)
 // #endif
 
-#ifdef MACOS
+#ifdef __MACOS__
 #include <ApplicationServices/ApplicationServices.h>
 #include <unistd.h>
 #endif
@@ -59,14 +56,14 @@ private:
 
 	static const int16_t SENSITIVITY = 2;
 
-#ifdef MACOS
+#ifdef __MACOS__
 	void static PressKey(uint8_t ca);
 
 	void static MouseMovements(CGEventType mouseType, int16_t x, int16_t y, CGMouseButton mouseButton);
 	void static MouseScroll(CGEventSourceRef source, int16_t scrollCountX, int16_t scrollCountY);
 #endif
 
-#ifdef WINDOWS
+#ifdef __WINDOWS__
 	void static PressKeyUnicode(uint8_t ca, bool bExtended);
 
 	//The input must be Windows Scancodes

@@ -20,12 +20,20 @@ set(SERVICEDISCOVERY_HEADERS
 set(SERVICEDISCOVERY_SOURCES
     ServiceDiscovery.cpp)
 
+find_library(APPLICATIONSERVICES_LIB ApplicationServices)
+
 add_library(${PROJECT_NAME} STATIC 
     ${SERVICEDISCOVERY_SOURCES} 
     ${SERVICEDISCOVERY_HEADERS})
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${POCO_BASE}/Poco/DNSSD/include/)
 target_include_directories(${PROJECT_NAME} PRIVATE ${POCO_BASE}/Poco/DNSSD/Bonjour/include/)
-target_link_libraries(${PROJECT_NAME} PRIVATE ${POCO_BASE}/Poco/lib/Darwin/x86_64/)
+target_link_libraries(${PROJECT_NAME} PUBLIC 
+    ${POCO_BASE}/Poco/lib/Darwin/x86_64/libPocoFoundation.a
+    ${POCO_BASE}/Poco/lib/Darwin/x86_64/libPocoDNSSD.a
+    ${POCO_BASE}/Poco/lib/Darwin/x86_64/libPocoDNSSDBonjour.a
+    ${POCO_BASE}/Poco/lib/Darwin/x86_64/libPocoNet.a
+    ${APPLICATIONSERVICES_LIB}
+    )
 
 

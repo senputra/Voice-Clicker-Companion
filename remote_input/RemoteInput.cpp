@@ -9,7 +9,7 @@ RemoteInput::RemoteInput()
 {
 }
 
-#ifdef MACOS
+#ifdef __MACOS__
 
 void RemoteInput::PressKey(uint8_t ca)
 {
@@ -52,6 +52,7 @@ void RemoteInput::MouseScroll(CGEventSourceRef source, int16_t scrollCountX, int
 
 void RemoteInput::execute(uint8_t *command)
 {
+	
 	uint8_t inputType = command[0];
 	uint8_t actionType = command[1];
 	uint8_t dataLength = command[2];
@@ -173,7 +174,7 @@ void RemoteInput::execute(uint8_t *command)
 
 #endif
 
-#ifdef WINDOWS
+#ifdef __WINDOWS__
 void RemoteInput::PressKeyUnicode(uint8_t ca, bool bExtended)
 {
 	//Structure for the keyboard event
