@@ -42,6 +42,14 @@ private:
 	static const uint8_t KEYBOARD_ACTION_EMOJI = 11;
 	static const uint8_t KEYBOARD_ACTION_OTHERS = 12;
 
+	int16_t XCoor = 50;
+	int16_t YCoor = 50;
+	int16_t scrollXCoor = 0;
+	int16_t scrollYCoor = 0;
+	uint32_t xWheelCount = 0;
+	uint32_t yWheelCount = 0;
+	int16_t scrollThreshold = 10;
+
 	int16_t lastXCoor = -1;
 	int16_t lastYCoor = -1;
 	int16_t newXCoor = -1;
@@ -57,10 +65,10 @@ private:
 	static const int16_t SENSITIVITY = 2;
 
 #ifdef __MACOS__
-	void static PressKey(uint8_t ca);
+	void PressKey(uint8_t ca);
 
-	void static MouseMovements(CGEventType mouseType, int16_t x, int16_t y, CGMouseButton mouseButton);
-	void static MouseScroll(CGEventSourceRef source, int16_t scrollCountX, int16_t scrollCountY);
+	void MouseMovements(CGEventType mouseType, int16_t x, int16_t y, CGMouseButton mouseButton);
+	void MouseScroll(CGEventSourceRef source, int16_t scrollCountX, int16_t scrollCountY);
 #endif
 
 #ifdef __WINDOWS__
