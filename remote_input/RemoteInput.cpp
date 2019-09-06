@@ -13,6 +13,17 @@ RemoteInput::RemoteInput()
 
 void RemoteInput::PressKey(uint8_t ca)
 {
+	if (VERBOSITY)
+		printf("print ca value: %d \n", ca);
+
+	if (ca == 39)
+	{
+		ca = 0x7C;
+	}
+	else if (ca == 37)
+	{
+		ca = 0x7b;
+	}
 	CGEventRef keyDown = CGEventCreateKeyboardEvent(
 		NULL,
 		ca,
