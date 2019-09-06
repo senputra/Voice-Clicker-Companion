@@ -21,8 +21,6 @@ elseif(WIN32)
     add_compile_definitions(__WINDOWS__)
 endif()
 
-message("Setting up library: [buffer]")
-add_subdirectory(buffer)
 message("Setting up library: [microphone]")
 add_subdirectory(microphone)
 message("Setting up library: [remote_input]")

@@ -30,7 +30,6 @@ if(Boost_FOUND)
         ${POCO_LINK_LIBRAIES}
         )
         target_link_libraries(${PROJECT_NAME} PUBLIC
-            Buffer
             Microphone
             RemoteInput
             ServiceDiscovery)
