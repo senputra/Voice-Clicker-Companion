@@ -24,7 +24,7 @@ StreamBuffer::StreamBuffer(uint32_t cs, uint32_t noc)
 	stallBuffer = new int16_t[chunkSize];
 	memset(stallBuffer, 0, chunkSizeInBytes);
 
-	printf("number of Chunk %d", numberOfChunk);
+	// printf("number of Chunk %d", numberOfChunk);
 }
 
 StreamBuffer::~StreamBuffer()
@@ -43,7 +43,8 @@ int16_t* StreamBuffer::getWriterPointer() {
 		writerCounter = 0;
 		//printf(" \n");
 	}
-	//printf(" writer %d ", writerCounter);
+	// printf(" writer %d ", writerCounter);
+	// printf(" writer data %d \n", *buffer[writerCounter]);
 	return buffer[writerCounter++];
 }
 
@@ -56,7 +57,8 @@ int16_t* StreamBuffer::getReaderPointer() {
 		readerCounter = 0;
 		//printf(" \n");
 	}
-	//printf("listener %d ", readerCounter); 
+	// printf(" reader %d ", readerCounter);
+	// printf(" reader data %d \n", *buffer[readerCounter]);
 	return buffer[readerCounter++];
 }
 

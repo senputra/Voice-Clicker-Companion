@@ -23,7 +23,7 @@ int NetworkStream::getLocalPort()
 
 void NetworkStream::start_receive()
 {
-	//printf("Start receiving at port");
+	// printf("Start receiving at port");
 	socket_.async_receive_from(
 		boost::asio::buffer(reinterpret_cast<char*>(buffer_->getWriterPointer()), bufferSizeInBytes), remote_endpoint_,
 		boost::bind(&NetworkStream::handle_receive, this,

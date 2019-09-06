@@ -65,7 +65,7 @@ void PlaybackEngine::postProcessing(int16_t * outputBuffer, int16_t * udpBuffer,
 void PlaybackEngine::setupPlaybackStream()
 {
 	RtAudio::StreamOptions sOptions;
-	sOptions.flags = RTAUDIO_MINIMIZE_LATENCY;
+	//
 
 	RtAudio::StreamParameters oParams;
 	oParams.deviceId = dac.getDefaultOutputDevice();
