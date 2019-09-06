@@ -13,6 +13,17 @@ RemoteInput::RemoteInput()
 
 void RemoteInput::PressKey(uint8_t ca)
 {
+	if (VERBOSITY)
+		printf("print ca value: %d \n", ca);
+
+	if (ca == 39)
+	{
+		ca = 0x7C;
+	}
+	else if (ca == 37)
+	{
+		ca = 0x7b;
+	}
 	CGEventRef keyDown = CGEventCreateKeyboardEvent(
 		NULL,
 		ca,
@@ -43,8 +54,25 @@ void RemoteInput::MouseMovements(CGEventType mouseType, int16_t x, int16_t y, CG
 
 void RemoteInput::MouseScroll(CGEventSourceRef source, int16_t scrollCountX, int16_t scrollCountY)
 {
+
+	scrollXCoor += scrollCountX;
+	scrollYCoor += scrollCountY;
+
+	xWheelCount = scrollXCoor / scrollThreshold;
+	yWheelCount = scrollYCoor / scrollThreshold;
+
+	if (xWheelCount != 0)
+	{
+		scrollXCoor = 0;
+	}
+
+	if (yWheelCount != 0)
+	{
+		scrollYCoor = 0;
+	}
+
 	CGEventRef scroll = CGEventCreateScrollWheelEvent(
-		source, kCGScrollEventUnitLine, 2, scrollCountX, scrollCountY);
+		source, kCGScrollEventUnitLine, 2, yWheelCount, xWheelCount);
 
 	CGEventPost(kCGHIDEventTap, scroll);
 	CFRelease(scroll);
@@ -52,7 +80,7 @@ void RemoteInput::MouseScroll(CGEventSourceRef source, int16_t scrollCountX, int
 
 void RemoteInput::execute(uint8_t *command)
 {
-	
+
 	uint8_t inputType = command[0];
 	uint8_t actionType = command[1];
 	uint8_t dataLength = command[2];
@@ -66,24 +94,24 @@ void RemoteInput::execute(uint8_t *command)
 		case MOUSE_ACTION_LEFT_CLICK:
 			if (VERBOSITY)
 				std::cout << "CLICKLCICKCLICK left click" << std::endl;
-			MouseMovements(kCGEventLeftMouseDown, newXCoor, newYCoor, kCGMouseButtonLeft);
-			MouseMovements(kCGEventLeftMouseUp, newXCoor, newYCoor, kCGMouseButtonLeft);
+			MouseMovements(kCGEventLeftMouseDown, XCoor, YCoor, kCGMouseButtonLeft);
+			MouseMovements(kCGEventLeftMouseUp, XCoor, YCoor, kCGMouseButtonLeft);
 			break;
 		case MOUSE_ACTION_RIGHT_CLICK:
 			if (VERBOSITY)
 				std::cout << "CLICKLCICKCLICK right click" << std::endl;
-			MouseMovements(kCGEventRightMouseDown, newXCoor, newYCoor, kCGMouseButtonRight);
-			MouseMovements(kCGEventRightMouseUp, newXCoor, newYCoor, kCGMouseButtonRight);
+			MouseMovements(kCGEventRightMouseDown, XCoor, YCoor, kCGMouseButtonRight);
+			MouseMovements(kCGEventRightMouseUp, XCoor, YCoor, kCGMouseButtonRight);
 			break;
 		case MOUSE_ACTION_LEFT_DOWN:
 			if (VERBOSITY)
 				std::cout << "CLICKLCICKCLICK left down" << std::endl;
-			MouseMovements(kCGEventLeftMouseDown, newXCoor, newYCoor, kCGMouseButtonLeft);
+			MouseMovements(kCGEventLeftMouseDown, XCoor, YCoor, kCGMouseButtonLeft);
 			break;
 		case MOUSE_ACTION_LEFT_UP:
 			if (VERBOSITY)
 				std::cout << "CLICKLCICKCLICK left up" << std::endl;
-			MouseMovements(kCGEventLeftMouseUp, newXCoor, newYCoor, kCGMouseButtonLeft);
+			MouseMovements(kCGEventLeftMouseUp, XCoor, YCoor, kCGMouseButtonLeft);
 			break;
 		case MOUSE_ACTION_MIDDLE_CLICK:
 			if (VERBOSITY)
@@ -109,10 +137,17 @@ void RemoteInput::execute(uint8_t *command)
 						lastYCoor = -1;
 					}
 					else
-					{ //finger lifts, resetting all the condition
+					{ //finger lifts, resetting all theÍ condition
 						if (VERBOSITY)
+						{
 							printf("Received coordinate %d,%d \n", newXCoor, newYCoor);
-						MouseScroll(NULL, newXCoor, newYCoor);
+							printf("Received coordinate differentiate %d,%d \n", lastXCoor - newXCoor, lastYCoor - newYCoor);
+						}
+						XCoor -= lastXCoor - newXCoor;
+						XCoor = XCoor < 0 ? 0 : XCoor;
+						YCoor -= lastYCoor - newYCoor;
+						YCoor = YCoor < 0 ? 0 : YCoor;
+						MouseMovements(kCGEventMouseMoved, XCoor, YCoor, kCGMouseButtonLeft);
 						lastXCoor = newXCoor;
 						lastYCoor = newYCoor;
 					}
@@ -143,7 +178,7 @@ void RemoteInput::execute(uint8_t *command)
 					{ //finger lifts, resetting all the condition
 						if (VERBOSITY)
 							printf("Received Scroll %d,%d \n", newXAverage - lastXAverage, newYAverage - lastYAverage);
-						// MouseMovements(MOUSEEVENTF_WHEEL, 0, 0, newYAverage - lastYAverage);
+						MouseScroll(NULL, newXAverage - lastXAverage, newYAverage - lastYAverage);
 						// MouseMovements(MOUSEEVENTF_HWHEEL, 0, 0, lastXAverage - newXAverage);
 						lastXAverage = newXAverage;
 						lastYAverage = newYAverage;
