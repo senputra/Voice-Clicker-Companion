@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../lib/libRemoteInput.a  CMakeFiles/RemoteInput.dir/RemoteInput.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../lib/libRemoteInput.a

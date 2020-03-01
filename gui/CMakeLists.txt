@@ -10,8 +10,13 @@ set(QT_DIR "/Users/praxiumsg/Qt/5.13.0")
 set( ENV(CMAKE_PREFIX_PATH) ${QT_DIR} )
 set(QT_QMAKE_EXECUTABLE ${QT_DIR}/clang_64/bin/qmake)
 
-find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
+find_package(Qt5 COMPONENTS 
+        Core
+        Widgets 
+        REQUIRED)
 include_directories(${Qt5Widgets_INCLUDE_DIRS})
+include_directories(${Qt5Core_INCLUDE_DIRS})
+
 
 set(Boost_USE_STATIC_LIBS ON) 
 set(Boost_USE_MULTITHREADED OFF)  
@@ -22,19 +27,24 @@ if(Boost_FOUND)
         ${POCO_HEADERS}) 
 endif()
 
-add_executable(${PROJECT_NAME} 
-        TrayApp.ui
+add_executable(${PROJECT_NAME}
         TrayApp.cpp
         main.cpp
         trayassets.qrc
 )
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CONTROLPANEL_INCLUDES})
-target_link_libraries(${PROJECT_NAME} Qt5::Core)
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
+target_link_libraries(${PROJECT_NAME} 
+    ControlPanel
+    Qt5::Core
+    Qt5::Widgets
+)
+
+# Linking the qt5 dynamically
+qt5_use_modules(${PROJECT_NAME} Core Widgets)
+
 target_link_directories(${PROJECT_NAME} PRIVATE
     ${MAKE_LIBRARY_OUTPUT_DIRECTORY})
-    
-target_link_libraries(${PROJECT_NAME} ControlPanel)
+
 
 

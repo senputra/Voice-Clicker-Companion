@@ -1,0 +1,35 @@
+# Meta
+set(AM_MULTI_CONFIG "FALSE")
+set(AM_PARALLEL "2")
+set(AM_VERBOSITY "")
+# Directories
+set(AM_CMAKE_SOURCE_DIR "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion")
+set(AM_CMAKE_BINARY_DIR "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build1")
+set(AM_CMAKE_CURRENT_SOURCE_DIR "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/gui")
+set(AM_CMAKE_CURRENT_BINARY_DIR "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build1/gui")
+set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
+set(AM_BUILD_DIR "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build1/gui/VoiceClicker_autogen")
+set(AM_INCLUDE_DIR "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build1/gui/VoiceClicker_autogen/include")
+# Files
+set(AM_SOURCES "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/gui/TrayApp.cpp;/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/gui/main.cpp")
+set(AM_HEADERS "")
+set(AM_SETTINGS_FILE "/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/build1/gui/CMakeFiles/VoiceClicker_autogen.dir/AutogenOldSettings.txt")
+# Qt
+set(AM_QT_VERSION_MAJOR 5)
+set(AM_QT_MOC_EXECUTABLE "/usr/local/opt/qt5/bin/moc")
+set(AM_QT_UIC_EXECUTABLE "/usr/local/opt/qt5/bin/uic")
+# MOC settings
+set(AM_MOC_SKIP "")
+set(AM_MOC_DEFINITIONS "QT_CORE_LIB;QT_GUI_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;__MACOSX_CORE__;__MACOS__")
+set(AM_MOC_INCLUDES "/usr/local/include;/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/control_panel;/usr/local/include/boost;/Users/praxiumsg/Projects/poco/Poco/DNSSD/include;/Users/praxiumsg/Projects/poco/Poco/DNSSD/Bonjour/include;/Users/praxiumsg/Projects/poco/Poco/DNSSD/Avahi/include;/Users/praxiumsg/Projects/poco/Poco/Net/include;/Users/praxiumsg/Projects/poco/Poco/Foundation/include;/usr/local/opt/qt5/lib/QtWidgets.framework;/usr/local/opt/qt5/lib/QtWidgets.framework/Headers;/usr/local/opt/qt5/lib/QtGui.framework;/usr/local/opt/qt5/lib/QtGui.framework/Headers;/usr/local/opt/qt5/lib/QtCore.framework;/usr/local/opt/qt5/lib/QtCore.framework/Headers;/usr/local/opt/qt5/./mkspecs/macx-clang;/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers;/Library/Developer/CommandLineTools/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include;/Library/Developer/CommandLineTools/usr/include;/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include")
+set(AM_MOC_OPTIONS "")
+set(AM_MOC_RELAXED_MODE "")
+set(AM_MOC_MACRO_NAMES "Q_OBJECT;Q_GADGET;Q_NAMESPACE;Q_NAMESPACE_EXPORT")
+set(AM_MOC_DEPEND_FILTERS "")
+set(AM_MOC_PREDEFS_CMD "/Library/Developer/CommandLineTools/usr/bin/c++;-dM;-E;-c;/usr/local/Cellar/cmake/3.14.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp")
+# UIC settings
+set(AM_UIC_SKIP "")
+set(AM_UIC_TARGET_OPTIONS "")
+set(AM_UIC_OPTIONS_FILES "")
+set(AM_UIC_OPTIONS_OPTIONS "")
+set(AM_UIC_SEARCH_PATHS "")

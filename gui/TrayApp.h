@@ -2,23 +2,20 @@
 
 #ifndef TRAYAPP_H
 #define TRAYAPP_H
-#include <QSystemTrayIcon>
 
 #ifndef QT_NO_SYSTEMTRAYICON
 
+#include <QString>
+
+#include <QApplication>
+#include <QWidget>
+#include <QSystemTrayIcon>
 #include <QDialog>
 #include <QMenu>
-#include <QAction>
-#include <QCheckBox>
-#include <QComboBox>
-#include <QGroupBox>
-#include <QLabel>
-#include <QLineEdit>
-#include <QPushButton>
-#include <QSpinBox>
-#include <QTextEdit>
+#include <QDialog>
 
-#include "ui_TrayApp.h"
+#include <QAction>
+
 
 #include "./ControlPanel.h"
 

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/remote_input/RemoteInput.cpp
+RemoteInput.h
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/remote_input/RemoteInput.h
+thread
+-
+
+/Users/praxiumsg/Projects/Voice Clicker Companion/Voice-Clicker-Companion/remote_input/RemoteInput.h
+ApplicationServices/ApplicationServices.h
+-
+unistd.h
+-
+iostream
+-
+stdint.h
+-
+

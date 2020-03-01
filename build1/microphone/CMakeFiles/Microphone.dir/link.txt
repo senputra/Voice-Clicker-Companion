@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../lib/libMicrophone.a  CMakeFiles/Microphone.dir/Microphone.cpp.o CMakeFiles/Microphone.dir/NetworkStream.cpp.o CMakeFiles/Microphone.dir/RtAudio.cpp.o CMakeFiles/Microphone.dir/PlaybackStream.cpp.o CMakeFiles/Microphone.dir/StreamBuffer.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../lib/libMicrophone.a

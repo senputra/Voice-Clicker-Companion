@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../lib/libControlPanel.a  CMakeFiles/ControlPanel.dir/ControlPanel.cpp.o CMakeFiles/ControlPanel.dir/SocketHelper.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../lib/libControlPanel.a

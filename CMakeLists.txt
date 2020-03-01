@@ -30,10 +30,32 @@ add_subdirectory(zero_config)
 message("Setting up library: [control panel]")
 add_subdirectory(control_panel)
 message("Setting up library: [gui]")
-add_subdirectory(gui)
+add_subdirectory(gui) 
 
+#### Make bundle if this is apple env
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+    message("Making bundle")
+# Destination paths below are relative to ${CMAKE_INSTALL_PREFIX}
+    install(TARGETS ${APP_NAME}
+        BUNDLE DESTINATION . COMPONENT Runtime
+        RUNTIME DESTINATION bin COMPONENT Runtime
+    )
 
-
+    set(APPS "\${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME}.app")
+    set(DIRS ${CMAKE_BINARY_DIR})
+    install(CODE "include(BundleUtilities)
+    fixup_bundle(\"${APPS}\" \"\" \"${DIRS}\")")
+ 
+    set(CPACK_BUNDLE_NAME VoiceClicker)
+    set(CPACK_BUNDLE_PLIST ${CMAKE_HOME_DIRECTORY}/Info.plist)
+    set(CPACK_BUNDLE_ICON ${CMAKE_HOME_DIRECTORY}/VoiceClicker.icns)
+    
+    set(CPACK_GENERATOR "Bundle")
+    include(CPack)
+    # CPACK_BUNDLE_PLIST(Info.plist)
+    # CPACK_BUNDLE_ICON (Voice Clicker.icns)
+    # CPACK_BUNDLE_APPLE_CODESIGN_PARAMETER (--deep -f)
+endif()  
 # add_executable(${PROJECT_NAME} main.cpp)
 # set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "Voice Clicker Companion")
 # target_link_libraries(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/build/libBuffer.a)

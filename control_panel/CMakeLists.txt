@@ -5,6 +5,8 @@ set(Boost_USE_MULTITHREADED OFF)
 set(Boost_USE_STATIC_RUNTIME OFF) 
 find_package(Boost 1.70.0) 
 if(Boost_FOUND)
+message("Boost Library")
+message("sadfdsafasdf ::: ${Boost_INCLUDE_DIRS}")
     include_directories(
         ${Boost_INCLUDE_DIRS}
         ${POCO_HEADERS}
@@ -24,14 +26,15 @@ if(Boost_FOUND)
         )
 
     target_include_directories(${PROJECT_NAME} PUBLIC ${POCO_HEADERS})
+    target_include_directories(${PROJECT_NAME} PUBLIC ${Boost_INCLUDE_DIRS}/boost)
 
     target_link_libraries(${PROJECT_NAME} 
         ${Boost_LIBRARIES}
         ${POCO_LINK_LIBRAIES}
         )
-        target_link_libraries(${PROJECT_NAME} PUBLIC
-            Microphone
-            RemoteInput
-            ServiceDiscovery)
+    target_link_libraries(${PROJECT_NAME} PUBLIC
+        Microphone
+        RemoteInput
+        ServiceDiscovery)
 endif()
 set(CONTROLPANEL_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR} PARENT_SCOPE)
